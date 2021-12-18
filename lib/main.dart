@@ -13,6 +13,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Youtube App",
+      theme: ThemeData.dark().copyWith(
+        scaffoldBackgroundColor: const Color(0xFF212020),
+      ),
       initialRoute: '/',
       routes: {
         HomePage.routeName: (ctx) => const HomePage(),
